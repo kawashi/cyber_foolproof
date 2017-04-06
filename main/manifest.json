@@ -1,0 +1,19 @@
+﻿{
+    "manifest_version": 2,
+    "name": "CyberFoolproof",
+    "description": "サイバーで4回目テストを無断で受けない為の対策",
+    "version": "1.2",
+    
+    "content_scripts": [
+        {
+            "matches": [
+                "https://lms.cyber-u.ac.jp/moodle/mod/cuquiz/view.php?*"
+            ],
+            "js": [
+                "lib/jquery-2.1.1.min.js",
+                "foolproof/foolproof.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
